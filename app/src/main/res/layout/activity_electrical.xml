@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            tools:context="net.locuscontrol.lcsengineer.electrical"
+    android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Electrical Calculations"
+                android:id="@+id/textView2"
+                android:textColor="@color/Locus_Blue"
+                android:textStyle="bold|italic"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:text="Cable Size Calculation"
+            android:id="@+id/eBtn11"
+            android:onClick="eBtn11Clk"
+            android:textColor="@android:color/white"
+            android:background="@color/Locus_Blue"
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Circuit Breaker Calculation"
+            android:id="@+id/eBtn12"
+            android:onClick="eBtn12Clk"
+            android:background="@color/Locus_Orange"
+            android:textColor="@android:color/white"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Contactor Thermic Calculation"
+            android:id="@+id/eBtn13"
+            android:onClick="eBtn13Clk"
+            android:background="@color/Locus_Purple"
+            android:textColor="@android:color/white"
+            android:layout_column="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.42">
+
+        <Button
+            android:text="Current Calculation"
+            android:id="@+id/eBtn21"
+            android:onClick="eBtn21Clk"
+            android:background="@color/Locus_Red"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:text="Current Calculation"
+            android:id="@+id/eBtn22"
+            android:onClick="eBtn22Clk"
+            android:background="@color/Locus_Blue"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:text="Current Calculation"
+            android:id="@+id/eBtn23"
+            android:onClick="eBtn23Clk"
+            android:background="@color/Locus_Orange"
+            android:textColor="@android:color/white"
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+CHANGED,/Users/erdal/AndroidStudioProjects/LCSEngineer/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/net/locuscontrol/lcsengineer/m_layout11$override.class
+CHANGED,/Users/erdal/AndroidStudioProjects/LCSEngineer/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

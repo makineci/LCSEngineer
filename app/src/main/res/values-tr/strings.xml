@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LCS Engineering Toolbox</string>
+    <string name="coil_prompt">Lütfen Serpantin Tipini Seçin</string>
+    <string name="hello_blank_fragment">Boş Fragment</string>
+    <string name="kvs_prompt">Lütfen Kvs\'yi seçin</string>
+    <string name="w_c_prompt">Lütfen Kapasite Birimini seçin</string>
+</resources>

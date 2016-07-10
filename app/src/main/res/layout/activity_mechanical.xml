@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.locuscontrol.lcsengineer.mechanical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mechanical Calculations"
+        android:id="@+id/textView6"
+        android:textColor="@color/Locus_Blue"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:gravity="center" >
+
+        <Button
+            android:text="Valve Size Calculation"
+            android:id="@+id/mBtn11"
+            android:onClick="mBtn11Clk"
+            android:textColor="@android:color/white"
+            android:background="@color/Locus_Blue"
+            android:layout_column="0"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Circuit Breaker Calculation"
+            android:id="@+id/mBtn12"
+            android:onClick="mBtn12Clk"
+            android:background="@color/Locus_Orange"
+            android:textColor="@android:color/white"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Contactor Thermic Calculation"
+            android:id="@+id/mBtn13"
+            android:onClick="mBtn13Clk"
+            android:background="@color/Locus_Purple"
+            android:textColor="@android:color/white"
+            android:layout_column="4"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

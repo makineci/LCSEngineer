@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Locus_Blue">#00519d</color>
+    <color name="Locus_Orange">#f16c23</color>
+    <color name="Locus_Red">#d8272d</color>
+    <color name="Locus_Purple">#5d2b85</color>
+</resources>

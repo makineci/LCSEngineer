@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">LCS Engineering Toolbox</string>
+    <string name="coil_prompt">Please Select the Coil Type</string>
+    <string name="kvs_prompt">Please Select the Kvs</string>
+    <string name="w_c_prompt">Please Select the Kvs</string>
+
+    <string-array name="kvs">
+        <item>0,16</item>
+        <item>0,25</item>
+        <item>0,4</item>
+        <item>0,63</item>
+        <item>1</item>
+        <item>1,6</item>
+        <item>2,5</item>
+        <item>4</item>
+        <item>6,3</item>
+        <item>10</item>
+        <item>16</item>
+        <item>25</item>
+        <item>40</item>
+        <item>63</item>
+        <item>100</item>
+        <item>160</item>
+        <item>250</item>
+        <item>360</item>
+
+    </string-array>
+
+    <string-array name="coil">
+        <item>Heating</item>
+        <item>Cooling</item>
+        <item>Heat Exchanger</item>
+
+    </string-array>
+
+    <string-array name="w_c">
+        <item>kW</item>
+        <item>kCall</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

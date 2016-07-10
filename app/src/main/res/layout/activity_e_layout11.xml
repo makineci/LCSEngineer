@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.locuscontrol.lcsengineer.eLayout11">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Cable Cross Sectional Area Calculator"
+                    android:id="@+id/textView7"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/Locus_Blue"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Power (W)"
+                        android:id="@+id/textView8"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/P"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:text="3000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/Area"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Cable Lenght(m)"
+                        android:id="@+id/textView9"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left"
+                        android:layout_below="@+id/textView8"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/L"
+                        android:layout_alignBottom="@+id/textView9"
+                        android:layout_toRightOf="@+id/textView9"
+                        android:layout_toEndOf="@+id/textView9"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:text="100" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Phase"
+                        android:id="@+id/textView10"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView9" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Phs / 3 Phs "
+                        android:id="@+id/P1_3"
+                        android:showText="true"
+                        android:textOn="3"
+                        android:textOff="1"
+                        android:layout_above="@+id/textView3"
+                        android:layout_toRightOf="@+id/textView10"
+                        android:layout_toEndOf="@+id/textView10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Material"
+                        android:id="@+id/textView3"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cu / Al             "
+                        android:id="@+id/Cu_Al"
+                        android:textOn="Al"
+                        android:textOff="Cu"
+                        android:layout_alignBottom="@+id/textView3"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:layout_toEndOf="@+id/textView3"
+                        android:showText="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Voltage Drop (%)"
+                        android:id="@+id/textView4"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/eD"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_alignLeft="@+id/P"
+                        android:layout_alignStart="@+id/P"
+                        android:inputType="numberDecimal"
+                        android:text="3"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Voltage (V)"
+                        android:id="@+id/textView5"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|left"
+                        android:layout_below="@+id/textView4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/V"
+                        android:layout_alignBottom="@+id/textView5"
+                        android:layout_alignLeft="@+id/eD"
+                        android:layout_alignStart="@+id/eD"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:text="380" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:id="@+id/button4"
+                    android:onClick="CableSize"
+                    android:layout_below="@+id/textView5"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/Area"
+                    android:textAlignment="center"
+                    android:textColor="@color/Locus_Blue"
+                    android:visibility="visible"
+                    android:singleLine="false"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
